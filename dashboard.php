@@ -1,15 +1,14 @@
 <?php 
 // UI /////////////////
-require_once 'head.php'
+require_once './static/head.php';
 
-// For logout ///////////////
-require_once './oo/Talk.php';
+require_once './oo/Talk.class.php';
+require_once './oo/Work.class.php';
 
-// show SLINK GENERATOR //
-require_once './oo/Generator.'
-
+// Show all link that thisUser has generated //
 
 
- ?>
+// UI /////////////////
+require_once './static/foot.php';
 
-<?php require_once 'foot.php' ?>
+?>

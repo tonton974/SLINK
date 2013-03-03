@@ -5,8 +5,9 @@
 interface UserWill
 {    
     function logHimIn($pseudo,$pwd);
-    function logHimOut();
+    function logHimOut($pseudo);
     function register($mail, $pseudo, $pwd);
+    function already_exist($email, $pseudo);
 }
 
 ?>

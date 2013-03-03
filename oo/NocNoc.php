@@ -8,7 +8,7 @@
 */ 
 class NocNoc { 
  
-    protected $hello; 
+    protected $pdo; 
  
     function __construct() // Database Connection Information necessary for PDO class usage
     { 
@@ -18,7 +18,7 @@ class NocNoc {
 
 		try // to connect 
 		{
-			$this->hello = new PDO($dsn, $dbUser, $dbPwd);
+			$this->pdo = new PDO($dsn, $dbUser, $dbPwd);
 		}
 
 		catch (PDOException $e)

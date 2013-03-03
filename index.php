@@ -1,10 +1,10 @@
-<?php require_once "./static/head.php"; ?>
+<?php require_once './static/head.php'; ?>
 
-<?php require_once "./oo/login.php"; ?>
+<?php require_once 'login.php'; ?>
 
-<?php require_once "./static/footer.php"; ?>
+<?php require_once './static/foot.php'; ?>
 
 
 
-	
+
 

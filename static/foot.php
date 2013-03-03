@@ -1,9 +1,8 @@
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    	</div> <!--class= wrapper-->
 	</body>
 
-	<footer>
-		Â© Copyright 2013 Arnaud Boyer | All right reserved
+	<footer class="container">
+        &#169 Copyright 2013 <a href="https://twitter.com/NobyR">Arnaud Boyer</a> | All right reserved
 	</footer>
 
 </html>
