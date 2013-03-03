@@ -32,3 +32,5 @@ div>form>fieldset
 	margin: 0 auto 1em;
 	width: 202px
 }
+
+a.btn.btn-mini.btn-warning {float: right }

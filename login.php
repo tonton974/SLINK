@@ -14,7 +14,7 @@ if (isset($_POST['signup']))
 	header("location: register.php");
 }
 
-// Check if TRYING TO LOGIN
+// Check if TRYING TO LOGIN /////////////////
 if (isset($_POST['email']) && $_POST['pwd'] )
 {
 	$mel = addslashes($_POST['email']);
@@ -50,11 +50,11 @@ if ($err == "wrong data given") echo '<span style="color: red;">'.$err.' </span>
 
 <!-- LET ME IN ########################### -->
 
-<form <form method="post" class="form-signin">
+<form method="post" class="form-signin">
 	<fieldset>
 		<h5 class="form-signin-heading">Please sign in</h5>
 		<input 	type="email" 	class="input-block-level" name="email"	placeholder="Email address">
-		<input 	type="password" class="input-block-level" name="pwd"	placeholder="Password" name="pwd">
+		<input 	type="password" class="input-block-level" name="pwd"	placeholder="Password">
 		<button type="submit"	action="login.php" class="btn btn-large btn-primary">Sign in</button>
 		<input 	type="button"	onclick="self.location.href='register.php'" class="btn btn-large btn-primary" value= "Register"/>
 	</fieldset>

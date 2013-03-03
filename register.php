@@ -26,6 +26,9 @@ else if (isset($_POST['pseudo']) && filter_var($_POST['email'],FILTER_VALIDATE_E
 	// Instanciate ////
 	$surfer = new Talk;
 
+	// check the Db for taken identidiers. /
+	$surfer->already_exist($mel,$pse);
+
 	// Authenticate //////////////////////////////
 	$surfer->register($pse, $mel, $pas);
 
@@ -47,4 +50,4 @@ require_once ('./static/head.php');
 	</form>
 </div>
 
-<?php require_once '/static/foot.php'; ?>
+<?php require_once './static/foot.php'; ?>

@@ -1,4 +1,4 @@
-<?php require_once './static/head.php'; ?>
+<?php require './static/head.php'; ?>
 
 <?php require_once 'login.php'; ?>
 
