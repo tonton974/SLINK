@@ -8,7 +8,7 @@ require_once './oo/Work.class.php';
 global $err; //  Admit $errors :| see below //
 
 // ERROR Pwd do not match /////////////
-if (($_POST['pwd'] !== $_POST['pwdc'])) 
+if (isset($_POST['pseudo']) && ($_POST['pwd'] !== $_POST['pwdc'])) 
 {
 	$err = "Passwords do not match!";
 }

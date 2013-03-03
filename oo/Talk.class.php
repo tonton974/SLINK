@@ -51,6 +51,7 @@ class Talk extends NocNoc implements UserWill
         $entete .=  "Content-type: text/html; charset=UTF-8\r\n";
         $entete .=  "From: Slink.com::" . "\r\n " ."Reply-to:148282@supinfo.com " . "\r\n" ."X-mailer:PHP/" . phpversion();
 
+        $entete = str_replace("\n.", "\n..", $entete);
         mail($to,$subject,$body,$entete);
     }
 
